@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/frame3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="resources">
+      <main class="frame-main">
+        <div class="dribbble-group">
+          <h1 class="dribbble2">Dribbble</h1>
+          <div class="frame-wrapper3">
+            <div class="wrapper">
+              <div class="div2">&gt;</div>
+            </div>
+          </div>
+        </div>
+        <section class="frame-wrapper4">
+          <div class="frame-parent5">
+            <div class="frame-wrapper5">
+              <div class="frame-parent6">
+                <div class="what-brings-you-to-dribbble-wrapper">
+                  <h1 class="what-brings-you">What brings you to Dribbble?</h1>
+                </div>
+                <div class="select-the-options">
+                  Select the options that best describe you. Don’t worry you can
+                  explore other options later
+                </div>
+              </div>
+            </div>
+            <div class="frame-parent7">
+              <div class="rectangle-parent">
+                <div class="frame-child1"></div>
+                <img
+                  class="slide-1-icon"
+                  loading="lazy"
+                  alt=""
+                  src="../public/1-slide-1@2x.png"
+                >
+
+                <div class="im-a-designer-looking-to-shar-wrapper">
+                  <div class="im-a-designer">
+                    I’m a designer looking to share my work
+                  </div>
+                </div>
+                <div class="slide-background-wrapper">
+                  <div class="slide-background"></div>
+                </div>
+              </div>
+              <div class="rectangle-group">
+                <div class="frame-child2"></div>
+                <img
+                  class="slide-2-1"
+                  loading="lazy"
+                  alt=""
+                  src="../public/slide-2-1@2x.png"
+                />
+
+                <div class="im-a-looking-to-hire-a-design-wrapper">
+                  <div class="im-a-looking">
+                    I’m a looking to hire a designer
+                  </div>
+                </div>
+                <div class="ellipse-wrapper">
+                  <div class="frame-child3"></div>
+                </div>
+              </div>
+              <div class="rectangle-container">
+                <div class="frame-child4"></div>
+                <div class="slide-3-1-wrapper">
+                  <img
+                    class="slide-3-1"
+                    loading="lazy"
+                    alt=""
+                    src="../public/slide-3-1@2x.png"
+                  />
+                </div>
+                <div class="im-a-looking-for-design-inspi-parent">
+                  <div class="im-a-looking1">
+                    I’m a looking for design inspiration
+                  </div>
+                  <div class="ellipse-container">
+                    <div class="frame-child5"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="frame-wrapper6">
+          <a href="frame4.html" class="next-container" id="frameButton">
+            <b class="next1">Next</b>
+          </a>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      var frameButton = document.getElementById("frameButton");
+      if (frameButton) {
+        frameButton.addEventListener("click", function (e) {
+          window.location.href = "./component.html";
+        });
+      }
+      window.addEventListener('DOMContentLoaded', (event) => {
+    
+    var frameChild3 = document.querySelector('.frame-child3');
+    var frameChild5 = document.querySelector('.frame-child5');
+    var slideBackground = document.querySelector('.slide-background');
+    
+   
+    function handleSelection(selectedElement) {
+    
+      var allOptions = document.querySelectorAll('.frame-child3, .frame-child5, .slide-background');
+      allOptions.forEach(option => {
+        option.classList.remove('selected');
+      });
+   
+      selectedElement.classList.add('selected');
+    }
+    
+ 
+    if (frameChild3) {
+      frameChild3.addEventListener('click', function() {
+        handleSelection(frameChild3);
+      });
+    }
+
+  
+    if (frameChild5) {
+      frameChild5.addEventListener('click', function() {
+        handleSelection(frameChild5);
+      });
+    }
+    
+  
+    if (slideBackground) {
+      slideBackground.addEventListener('click', function() {
+        handleSelection(slideBackground);
+      });
+    }
+  });
+      </script>
+  </body>
+</html>

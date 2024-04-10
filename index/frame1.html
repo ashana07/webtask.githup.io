@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/frame1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop">
+      <main class="frame-parent">
+        <section class="frame-group">
+          <a href="./frame2.html" class="create-account-wrapper" id="frameButton">
+            <b class="create-account">Create Account</b>
+          </a>
+          <div class="frame-container">
+            <div class="gradient-3d-fluid-background-1-parent">
+              <img
+                class="gradient-3d-fluid-background-1-icon"
+                loading="lazy"
+                alt=""
+                src="../public/gradient3dfluidbackground-1@2x.png"
+              />
+
+              <h1 class="dribbble">Dribbble</h1>
+            </div>
+            <div class="sign-up-to-dribbble-parent">
+              <h1 class="sign-up-to">Sign up to Dribbble</h1>
+              <div class="frame-wrapper">
+                <div class="name-parent">
+                  <b class="email">Name</b>
+                  <b class="email">Email</b>
+                  <div class="password-parent">
+                    <b class="password">Password</b>
+                    <div class="frame-child"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="creating-an-account-container">
+                <span>Creating an account means you’re okay with our </span>
+                <span class="term-of-services"
+                  >Term of Services, Privacy Policy
+                </span>
+                <span>and our default</span>
+                <span class="span"> </span>
+                <span class="notification-settings"
+                  >Notification Settings.</span
+                >
+              </div>
+              <input class="frame-item" style="border: none; outline: none;" >
+              <input class="frame-inner" style="min-width: 100px;" type="text" >
+
+              <input class="rectangle-input" type="text" />
+            </div>
+            <footer class="this-is-protected-container">
+              <span class="this-is-protected"
+                >This is protected by reCAPTCHA,</span
+              >
+              <span> </span>
+              <span class="privacy-policy">Privacy Policy</span>
+              <span> </span>
+              <span class="and">and</span>
+              <span> </span>
+              <span class="terms-of-services">Terms of Services.</span>
+            </footer>
+          </div>
+        </section>
+        <div class="frame-div">
+          <div class="frame-parent1">
+            <div class="already-a-member-sign-in-wrapper">
+              <div class="already-a-member-container">
+                <span>Already a member? </span>
+                <span class="sign-in">Sign in</span>
+              </div>
+            </div>
+            <div class="username-parent">
+              <b class="username">Username</b>
+              <input class="rectangle-div" style="outline: none; border: none;  "/>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      
+      document.addEventListener('DOMContentLoaded', function () {
+      
+      var frameChild = document.querySelector('.frame-child');
+
+     
+      frameChild.addEventListener('click', function () {
+        frameChild.classList.toggle('selected');
+      });
+    });
+      </script>
+  </body>
+</html>
